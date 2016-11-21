@@ -1,0 +1,632 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Company Name</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	
+	<!-- critical css -->
+	<style>
+		*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #fff;
+  margin: 0;
+  color: #000;
+}
+
+h1,
+h2,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+h2 {
+  line-height: 1;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #41525c;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .top-section {
+  height: 115px;
+}
+
+.header .logo {
+  float: left;
+  font-size: 36px;
+  color: #ee8129;
+  font-family: 'Poiret One Regular', sans-serif;
+  line-height: 115px;
+}
+
+.header .logo span {
+  color: #3070a8;
+  font-family: 'Futura Md BT Bold', sans-serif;
+}
+
+.header .menu {
+  float: right;
+}
+
+.header .menu ul {
+  height: 100%;
+}
+
+.header .menu ul li {
+  float: left;
+}
+
+.header .menu ul li a {
+  display: block;
+  line-height: 98px;
+  padding: 17px 25px 0 25px;
+  font-size: 14px;
+  font-family: 'Open Sans Semibold', sans-serif;
+  text-decoration: none;
+  color: #989898;
+  border-bottom: 3px solid transparent;
+}
+
+.header .btn-mobile {
+  float: right;
+  position: relative;
+  display: inline-block;
+  display: none;
+  padding-left: 65px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 37px;
+  font-family: 'Open Sans Semibold', sans-serif;
+  text-transform: uppercase;
+}
+
+.header .btn-mobile::before,
+.header .btn-mobile::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .btn-mobile::before {
+  width: 50px;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #000), color-stop(10%, transparent), color-stop(45%, transparent), color-stop(45%, #000), color-stop(55%, #000), color-stop(55%, transparent), color-stop(90%, transparent), color-stop(90%, #000));
+  background: -webkit-linear-gradient(top, #000 10%, transparent 10%, transparent 45%, #000 45%, #000 55%, transparent 55%, transparent 90%, #000 90%);
+  background: linear-gradient(to bottom, #000 10%, transparent 10%, transparent 45%, #000 45%, #000 55%, transparent 55%, transparent 90%, #000 90%);
+}
+
+.header .content {
+  clear: both;
+  position: relative;
+  height: 586px;
+  background: #325677 url(../img/header-bg.jpg) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+}
+
+.header .content .box {
+  max-width: 880px;
+  margin: 0 auto;
+  position: relative;
+  top: 25.5972%;
+  height: 330px;
+  text-align: center;
+}
+
+.header .content h1 {
+  font-size: 48px;
+  font-family: 'Futura Md BT Bold', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.header .content h1 span {
+  font-size: 36px;
+  font-family: 'Futura Book', sans-serif;
+  text-transform: none;
+}
+
+.header .content p {
+  max-width: 585px;
+  margin: 10px auto;
+  font-size: 20px;
+  font-family: Calibri, sans-serif;
+  font-style: italic;
+}
+
+.header .content .button {
+  display: inline-block;
+  line-height: 55px;
+  font-family: 'Open Sans Semibold', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 60px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.box-1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.box-1 h2 {
+  margin-top: 65px;
+}
+
+.box-1 .box-1-items .item {
+  display: inline-block;
+  width: 320px;
+  margin: 70px 25px 0 25px;
+}
+
+.box-1 .box-1-items .item .icon {
+  width: 140px;
+  height: 140px;
+  display: inline-block;
+  background: #3070a8 url(../img/sprite-1.png) no-repeat;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.box-1 .box-1-items .item.protect .icon {
+  background-position: 0 0;
+}
+
+.box-1 .box-1-items .item.alert .icon {
+  background-position: -140px 0;
+}
+
+.box-1 .box-1-items .item.detect .icon {
+  background-position: -280px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .header .menu ul li a {
+    padding: 17px 10px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 5;
+    overflow: hidden;
+  }
+
+  .header .menu ul {
+    height: auto;
+    margin-top: 140px;
+  }
+
+  .header .menu ul li {
+    float: none;
+  }
+
+  .header .menu ul li a {
+    display: block;
+    line-height: 98px;
+    padding: 0 25px;
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Open Sans Semibold', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(48, 112, 168, 0.9);
+    border: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .header .menu .mob-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .header .menu .mob-overlay .close {
+    position: relative;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+  }
+
+  .header .menu .mob-overlay .close::before,
+  .header .menu .mob-overlay .close::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .header .menu .mob-overlay .close::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .header .menu .mob-overlay .close::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .header .btn-mobile {
+    display: inline-block;
+  }
+
+  .header .content h1 {
+    font-size: 28px;
+  }
+
+  .header .content h1 span {
+    font-size: 16px;
+  }
+
+  .header .content p {
+    font-size: 16px;
+  }
+
+  .header .content .button {
+    line-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header .top-section {
+    height: auto;
+  }
+
+  .header .logo {
+    float: none;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  .header .menu {
+    float: none;
+    text-align: center;
+  }
+
+  .header .btn-mobile {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .box-1 .box-1-items .item {
+    width: 270px;
+  }
+}
+	</style>
+
+	<script>
+		localStorage.fontsStyleCache = '';
+
+		(function(){
+			var style = document.createElement('style');
+	        style.rel = 'stylesheet';
+
+	        document.getElementsByTagName('head')[0].appendChild(style);
+	        
+	        if (localStorage.fontsStyleCache) {
+	        	style.textContent = localStorage.fontsStyleCache;
+	        } else {
+	            var request = new XMLHttpRequest();
+
+	            request.open('GET', 'css/fonts.css.embed', true);
+
+	            request.onreadystatechange = function() {
+	                if (request.status >= 200 && request.status < 400) {
+	                    style.textContent = localStorage.fontsStyleCache = request.responseText;
+	                }
+	            }
+	          	
+	            request.send();
+	        }
+		})();
+	
+	    !function(e){"use strict"
+	    var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+	    return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+	    setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
+	    "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
+
+		loadCSS("libs/font-awesome/css/font-awesome.min.css");
+		loadCSS("css/bootstrap.min.css");
+		loadCSS("css/main.css");
+		
+	</script>
+
+</head>
+<body>
+	
+	<header class="header">
+		<div class="top-section">
+			<div class="container">
+				<div class="logo">Company <span>Name</span></div>
+
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+
+					<div class="mob-overlay">
+						<div class="close"></div>
+					</div>
+				</nav>
+
+				<div class="btn-mobile">Menu</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="box">
+				<h1>
+					<span>We are specialist in</span><br>
+					Responsive designs, Stationary
+					And wordpress Themes
+				</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+				<a href="#" class="button">Button Name</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="box-1">
+		<h2>Lorem Ipsum is simply dummy text of the printing</h2>
+
+		<div class="box-1-items">
+			<div class="item protect">
+				<div class="icon"></div>
+				<h3>PROTECT</h3>
+				<p>100% of customer funds are stored offline in secure cold storage. We offer two­ factor authentication on all accounts, mobile alerts and delayed withdrawals, and spending and transfer limits.</p>
+			</div>
+
+			<div class="item alert">
+				<div class="icon"></div>
+				<h3>Alert</h3>
+				<p>100% of customer funds are stored offline in secure cold storage. We offer two­ factor authentication on all accounts, mobile alerts and delayed withdrawals, and spending and transfer limits.</p>
+			</div>
+
+			<div class="item detect">
+				<div class="icon"></div>
+				<h3>Detect</h3>
+				<p>100% of customer funds are stored offline in secure cold storage. We offer two­ factor authentication on all accounts, mobile alerts and delayed withdrawals, and spending and transfer limits.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="box-2">
+		<div class="container">
+			<div class="inner">
+				<h2>
+					Lorem Ipsum is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been....
+				</h2>
+
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+				<ul>
+					<li>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					</li>
+					<li class="blue">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+					</li>
+					<li>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="box-3">
+		<h2>We have a very flexible offers for you to choose</h2>	
+
+		<div class="box-3-items">
+			<div class="item blue">
+				<h3>Standard</h3>
+				<h4>iconic graphics</h4>
+				<div class="price">
+					<span>$</span><span>10</span><span>Monthly</span>
+				</div>
+				<ul>
+					<li>Unmetered Traffic</li>
+					<li>Unlimited Domain</li>
+					<li>Unlimited Databases</li>
+					<li>Unlimited e-Mails</li>
+				</ul>
+				<a href="#" class="button">Enroll Today</a>
+			</div>
+			<div class="item orange">
+				<h3>Best Value</h3>
+				<h4>iconic graphics</h4>
+				<div class="price">
+					<span>$</span><span>25</span><span>Monthly</span>
+				</div>
+				<ul>
+					<li>PHP, PERL, ASP, JSP</li>
+					<li>SEMI DEDICATED</li>
+					<li>Staging or Production</li>
+					<li>Unlimited e-Mails</li>
+				</ul>
+				<a href="#" class="button">Enroll Today</a>
+			</div>
+
+			<div class="item green">
+				<h3>Ultimate</h3>
+				<h4>iconic graphics</h4>
+				<div class="price">
+					<span>$</span><span>35</span><span>Monthly</span>
+				</div>
+				<ul>
+					<li>Semi Dedicated</li>
+					<li>1TB Storage</li>
+					<li>Faster Site, Better SEO</li>
+					<li>Unlimited e-Mails</li>
+				</ul>
+				<a href="#" class="button">Enroll Today</a>
+			</div>
+		</div>
+	</section>
+	
+	<div class="box-4">
+		<h2><span>What</span> Client Says</h2>
+		
+		<div class="container">
+			<div class="box-4-items">
+				<div class="item">
+					<div class="photo">
+						<img src="img/customers/1.jpg" alt="">
+					</div>
+					
+					<div class="text">
+						<div class="inner-box">
+							<div class="title">- Staciya Trollie <span>Customer</span></div>
+							<p>Lorem Ipsum is simply dummy text of the printing
+							and industry. Lorem Ipsum has been the industry.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="photo">
+						<img src="img/customers/2.jpg" alt="">
+					</div>
+					
+					<div class="text">
+						<div class="inner-box">
+							<div class="title">- David Soul <span>Customer</span></div>
+							<p>Lorem Ipsum is simply dummy text of the printing
+							and industry. Lorem Ipsum has been the industry.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="box-5">
+		<div class="container">
+			<div class="contact">
+				<ul>
+					<li class="address">
+						Iconic Graphics<br>
+						123 Main Street<br>
+						EastWest<br>
+						LHR 54500
+					</li>
+					<li class="phone"><a href="tel:0123456789">012.345.6789</a></li>
+					<li class="mail"><a href="mailto:info@admin.com">info@admin.com</a></li>
+				</ul>
+			</div>
+			<div class="social">
+				<ul>
+					<li><a href="#" class="in"></a></li>
+					<li><a href="#" class="tw"></a></li>
+					<li><a href="#" class="fc"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="map-box">
+			<div id="map"></div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="copyright">Copyright © 2014 <strong>Company Name</strong>. All rights reserved.</div>
+	</footer>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcd6GCz8opAUWNlOD6ZEmQME4nEdG6cFw&callback=initMap" async defer></script>
+	<script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          disableDefaultUI: true,
+          zoom: 8
+        });
+      }
+
+    </script>
+
+	<script src="js/compiled.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
